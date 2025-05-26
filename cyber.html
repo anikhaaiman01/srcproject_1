@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Internship | HAM TECHNOLOGIES</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header img {
+      max-width: 50%;
+      max-height: 30%;
+      height: auto;
+    }
+    main {
+      padding: 20px;
+    }
+    /* About Section */
+    .about {
+      padding: 40px 0;
+      background-color: #fff;
+    }
+    .about h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .about ul {
+      list-style: none;
+      padding: 0;
+    }
+    /* Mentors Section */
+    .mentors {
+      padding: 40px 0;
+      background-color: #f1f1f1;
+    }
+    .mentors h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .mentor-profiles {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .mentor {
+      background-color: #fff;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 10px;
+      text-align: center;
+      width: 300px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .mentor img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    /* Registration Form */
+    .registration {
+      padding: 40px 0;
+      background-color: #fff;
+    }
+    .registration h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    form {
+      max-width: 600px;
+      margin: auto;
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="tel"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    form input[type="submit"]:hover {
+      background-color: #555;
+    }
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      .mentor-profiles {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="CYBER1.jpg" alt="Cybersecurity Team at Work" />
+    <h1>Cybersecurity Internship at HAM TECHNOLOGIES</h1>
+  </header>
+<section class="about container">
+    <h2>Why Choose HAM TECHNOLOGIES?</h2>
+    <ul>
+      <li><strong>Expert Mentorship:</strong> Learn from industry leaders with extensive experience in Cybersecurity.</li>
+      <li><strong>Comprehensive Training:</strong> Engage in real-world projects covering Cybersecurity essentials, Ethical Hacking, and cryptography.</li>
+      <li><strong>Career Opportunities:</strong> Gain skills that open doors to top tech companies and research institutions.</li>
+    </ul>
+  </section>
+
+  <section class="mentors container">
+    <h2>Meet Our Mentors</h2>
+    <div class="mentor-profiles">
+      <div class="mentor">
+        <img src="CYBER2.jpg" alt="Vivek Ramachandran"/> 
+        <h3>Vivek Ramachandran</h3>
+        <p><a href="https://www.linkedin.com/in/dieter-fox-910aa24" target="_blank">LinkedIn Profile</a></p>
+      </div>
+      <div class="mentor">
+        <img src="CYBER3.png" alt="Nitin Pandey" />
+        <h3>Nitin Pandey</h3>
+        <p><a href="https://www.linkedin.com/in/john-leonard-9381393b" target="_blank">LinkedIn Profile</a></p>
+      </div>
+      <div class="mentor">
+        <img src="CYBER4.jpg" alt="Chris Krebs" />
+        <h3>Chris Krebs</h3>
+        <p><a href="https://www.linkedin.com/in/jitendra-malik-60b55823b" target="_blank">LinkedIn Profile</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="registration container">
+    <h2>Register Now</h2>
+    <form id="registrationForm" onsubmit="return validateForm()">
+      <label for="name">Full Name (in CAPS):</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 HAM TECHNOLOGIES. All rights reserved.
+  </footer>
+
+  <script>
+    function validateForm() {
+      var name = document.getElementById("name").value;
+      if (name !== name.toUpperCase()) {
+        alert("Please enter your name in uppercase letters.");
+        return false;
+      }
+      alert("Thanks for registering! We will reach out to you soon.");
+      return true;
+    }
+  </script>
+
+</body>
+</html>
+
